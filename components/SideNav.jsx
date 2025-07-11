@@ -1,43 +1,5 @@
 export default function SideNav(props) {
-    const notes = [
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-        "hello",
-        "world",
-    ];
+    const notes = ["world", "hello", "world"];
     const showNav = true;
 
     return (
@@ -56,11 +18,13 @@ export default function SideNav(props) {
                         return (
                             <button
                                 key={index}
-                                className='card-button-secondary'
+                                className='card-button-secondary list-btn'
                             >
                                 <p>{note}</p>
                                 <small>DateTIme</small>
-                                Delete BTN
+                                <div className='delete-btn'>
+                                    <i className='fa-solid fa-trash-can'></i>
+                                </div>
                             </button>
                         );
                     })

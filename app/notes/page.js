@@ -3,7 +3,7 @@ import Editor from "@/components/Editor";
 import SideNav from "@/components/SideNav";
 
 export default function NotesPage() {
-    const isViewer = false;
+    const isViewer = true;
 
     return (
         <main id='notes'>
